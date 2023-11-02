@@ -13,7 +13,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     @Override
-
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -36,7 +35,18 @@ public class MainActivity extends AppCompatActivity {
                 usuario.setText("");
                 password.setText("");
                 
-            }
+            }else{
+
+                    Mensaje.aviso(this, "Insercion Exitosa");
+                    usuario.setText("");
+                    password.setText("");
+
+                }
         }
+    }
+    public void verDatos(View view){
+        String datos = helper.getData();
+        Mensaje.aviso(this, datos);
+
     }
 }
