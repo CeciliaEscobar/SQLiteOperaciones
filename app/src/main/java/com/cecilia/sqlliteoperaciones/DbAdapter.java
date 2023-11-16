@@ -26,7 +26,7 @@ public class DbAdapter {
     public String getData(){
         SQLiteDatabase db = helper.getWritableDatabase();
         String [] columns = {dBHelper.UID, dBHelper.NAME, dBHelper.MyPASSWORD};
-        Cursor cursor = db.query(dBHelper.TABLE_NAME, columns, null, null, );
+        Cursor cursor = db.query(dBHelper.TABLE_NAME, columns, null, null, null,null,null);
         StringBuffer buffer = new StringBuffer();
         while(cursor.moveToNext()){
             int cid = cursor.getInt(cursor.getColumnIndex(dBHelper.UID));

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/txtNombreActual"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="96dp"
+        android:ems="10"
+        android:hint="@string/txt_nombre_actual"
+        android:inputType="textPersonName"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtNombreNuevo"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:hint="@string/txt_nombre_nuevo"
+        android:inputType="textPersonName"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.262"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreActual" />
+
+    <Button
+        android:id="@+id/btnActualizarUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:backgroundTint="@color/naranja"
+        android:onClick="update"
+        android:text="@string/btn_actualizar"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:icon="@drawable/baseline_refresh_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreNuevo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

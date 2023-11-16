@@ -6,4 +6,11 @@
     <string name="txt_password">Introduzca la Contraseña</string>
     <string name="btn_agregarusuario">Usuario</string>
     <string name="btn_ver_datos">Datos</string>
+    <string name="txt_nombre_actual">Nombre Actual</string>
+    <string name="txt_nombre_nuevo">Nombre Nuevo</string>
+    <string name="btn_actualizar">Actualizar</string>
+    <string name="txt_nombre_eliminar">Introduzca nombre para eliminar</string>
+    <string name="btn_eliminar">Eliminar</string>
+
+
 </resources>
